@@ -1,4 +1,4 @@
-package strmr
+package main
 
 import (
 	"encoding/json"
