@@ -8,9 +8,10 @@ import (
 
 type Configuration struct {
 	Directories []string
+	Database    []string
 }
 
-func getConfig() Configuration {
+func getConfig() *Configuration {
 	file, _ := os.Open("config.json")
 	defer file.Close()
 	decoder := json.NewDecoder(file)
@@ -19,7 +20,7 @@ func getConfig() Configuration {
 	if err != nil {
 		fmt.Println("error:", err)
 	}
-	return configuration
+	return &configuration
 }
 
 func getDirectories() []string {

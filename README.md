@@ -5,3 +5,10 @@ I'm a developer, I love music, and I love ROON. However, I don't love the price 
 ## Getting Started
 
 STRMR doesn't currently do much of anything, but please contact me if you're interested in helping.
+
+## Prerequisites/Packages
+
+(https://mediaarea.net/en/MediaInfo)libmediainfo-devel
+
+https://github.com/zhulik/go_mediainfo
+https://github.com/dhowden/tag
